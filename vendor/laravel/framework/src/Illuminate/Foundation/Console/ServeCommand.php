@@ -151,8 +151,8 @@ class ServeCommand extends Command
      */
     protected function serverCommand()
     {
-        $server = file_exists(base_path('index.php'))
-            ? base_path('index.php')
+        $server = file_exists(base_path('server.php'))
+            ? base_path('server.php')
             : __DIR__.'/../resources/index.php';
 
         return [
