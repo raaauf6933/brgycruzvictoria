@@ -83,3 +83,7 @@ Route::group(['middleware' => ['auth']],function() {
 
 Auth::routes(['register' => false]);
 
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});
+
